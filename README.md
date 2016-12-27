@@ -71,7 +71,7 @@ Modify hdf5_hl and hdf5 to hdf5_serial_hl and hdf5_serial at line 181 in Makefil
 
 +++ LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_serial_hl hdf5_serial leveldb snappy lmdb boost_system opencv_core opencv_highgui opencv_imgproc opencv_imgcodecs
 
-`make all1
+`make all`
 `make test`
 `make runtest`
 
