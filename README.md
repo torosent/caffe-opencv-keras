@@ -26,6 +26,8 @@ Tested on Azure NVC6 VM
 
 `bash Anaconda3-4.2.0-Linux-x86_64.sh`
 
+`wget https://bootstrap.pypa.io/ez_setup.py -O - | python - --user`
+
 ##OpenCV
 
 `sudo apt-get autoremove libopencv-dev python-opencv`
@@ -61,9 +63,7 @@ Append /usr/include/hdf5/serial/ to INCLUDE_DIRS at line 85 in Makefile.config.
 
 +++ INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/
 
-`# OPENCV_VERSION := 3`
-
-To use OpenCV 3.X with Caffe, you should uncomment this line 21
+To use OpenCV 3.X with Caffe, you should uncomment this line 21 `# OPENCV_VERSION := 3`
 
 Modify hdf5_hl and hdf5 to hdf5_serial_hl and hdf5_serial at line 181 in Makefile
 
