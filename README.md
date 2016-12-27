@@ -58,7 +58,12 @@ Append /usr/include/hdf5/serial/ to INCLUDE_DIRS at line 85 in Makefile.config.
 --- INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
 
 +++ INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/
-Modify hdf5_hl and hdf5 to hdf5_serial_hl and hdf5_serial at line 173 in Makefile
+
+`# OPENCV_VERSION := 3`
+
+To use OpenCV 3.X with Caffe, you should uncomment this line 21
+
+Modify hdf5_hl and hdf5 to hdf5_serial_hl and hdf5_serial at line 181 in Makefile
 
 --- LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_hl hdf5
 
