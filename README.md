@@ -1,6 +1,6 @@
 # Install Caffe OpenCV Keras
 
-Tested on Azure NVC6 VM
+Tested on Azure NC6 GPU VM
 
 ##General
 
