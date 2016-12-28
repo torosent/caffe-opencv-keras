@@ -57,6 +57,8 @@ to this:
 
 `cp Makefile.config.example Makefile.config`
 
+###Makefile.config
+
 Append /usr/include/hdf5/serial/ to INCLUDE_DIRS at line 85 in Makefile.config.
 
 --- INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
@@ -65,6 +67,13 @@ Append /usr/include/hdf5/serial/ to INCLUDE_DIRS at line 85 in Makefile.config.
 
 To use OpenCV 3.X with Caffe, you should uncomment this line 21 `# OPENCV_VERSION := 3`
 
+Uncomment to use Python 3 (default is Python 2. DON'T FORGET TO COMMENT IT) 
+PYTHON_LIBRARIES := boost_python3 python3.5m 
+PYTHON_INCLUDE := /usr/include/python3.5m \ 
+    /usr/lib/python3.5/dist-packages/numpy/core/include 
+
+###Makefile
+
 Modify hdf5_hl and hdf5 to hdf5_serial_hl and hdf5_serial at line 181 in Makefile
 
 --- LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_hl hdf5
@@ -72,8 +81,14 @@ Modify hdf5_hl and hdf5 to hdf5_serial_hl and hdf5_serial at line 181 in Makefil
 +++ LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_serial_hl hdf5_serial leveldb snappy lmdb boost_system opencv_core opencv_highgui opencv_imgproc opencv_imgcodecs
 
 `make all`
+
 `make test`
+
 `make runtest`
+
+`cd /usr/lib/x86_64-linux-gnu`
+
+`sudo ln -s libboost_python-py35.so libboost_python3.so`
 
 ##Keras
 
