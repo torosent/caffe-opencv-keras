@@ -1,6 +1,6 @@
-# Install Caffe OpenCV Keras
+# How To Install Caffe OpenCV Keras
 
-Tested on Azure NC6 GPU VM
+Tested on Azure NC6 GPU VM with Ubuntu 16.04
 
 ##General
 
