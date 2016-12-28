@@ -68,7 +68,9 @@ Append /usr/include/hdf5/serial/ to INCLUDE_DIRS at line 85 in Makefile.config.
 To use OpenCV 3.X with Caffe, you should uncomment this line 21 `# OPENCV_VERSION := 3`
 
 Uncomment to use Python 3 (default is Python 2. DON'T FORGET TO COMMENT IT) 
+
 PYTHON_LIBRARIES := boost_python3 python3.5m 
+
 PYTHON_INCLUDE := /usr/include/python3.5m \ 
     /usr/lib/python3.5/dist-packages/numpy/core/include 
 
