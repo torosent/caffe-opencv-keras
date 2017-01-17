@@ -12,7 +12,7 @@ Tested on Azure NC6 GPU VM with Ubuntu 16.04 and Python 3.5
 
 `sudo apt-get install cuda`
 
-`sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler libatlas-base-devr`
+`sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler libatlas-base-dev`
 
 `sudo apt-get install --no-install-recommends libboost-all-dev`
 
