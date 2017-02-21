@@ -22,6 +22,10 @@ Tested on Azure NC6 GPU VM with Ubuntu 16.04 and Python 3.5
 
 `sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev`
 
+`sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev1`
+
+`sudo apt-get install -y python3-numpy python3-scipy`
+
 `curl https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh > Anaconda3-4.2.0-Linux-x86_64.sh`
 
 `bash Anaconda3-4.2.0-Linux-x86_64.sh`
